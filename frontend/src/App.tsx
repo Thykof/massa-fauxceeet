@@ -1,5 +1,4 @@
 import { MAINNET_CHAIN_ID } from '@massalabs/massa-web3';
-import './App.css';
 import { useWriteSmartContract } from './lib/ConnectMassaWallets/hooks/write-sc';
 import { useAccountStore } from './lib/ConnectMassaWallets/store';
 import { ConnectMassaWallet } from './lib/ConnectMassaWallets/components/ConnectMassaWallet';
@@ -61,7 +60,7 @@ function App() {
           </a>
           <br />
           Delegated stacking:{' '}
-          <a href="https://massa-blast.net">https://massa-blast.net/</a>
+          <a href="https://massa-blast.net">https://massa-blast.net</a>
         </div>
       </div>
       <div className="theme-dark">
