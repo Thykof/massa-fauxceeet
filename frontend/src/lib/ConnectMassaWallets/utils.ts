@@ -1,12 +1,13 @@
+import { Client } from '@massalabs/massa-web3';
 import { toast } from '@massalabs/react-ui-kit';
 import { IAccount, IAccountBalanceResponse } from '@massalabs/wallet-provider';
-import { Client } from '@massalabs/massa-web3';
-import Intl from './i18n/i18n';
+
 import {
   MASSA_EXPLORER_URL,
   MASSA_EXPLO_EXTENSION,
   MASSA_EXPLO_URL,
 } from './const';
+import Intl from './i18n/i18n';
 
 export function logSmartContractEvents(
   client: Client,

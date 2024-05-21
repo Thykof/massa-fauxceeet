@@ -1,8 +1,9 @@
 import { Dropdown, MassaWallet } from '@massalabs/react-ui-kit';
-import Intl from '../i18n/i18n';
+
 import { BearbySvg } from './BearbySvg';
-import { SUPPORTED_MASSA_WALLETS } from '../const';
 import { Disconnected } from './Status/Disconnected';
+import { SUPPORTED_MASSA_WALLETS } from '../const';
+import Intl from '../i18n/i18n';
 
 const walletList = [
   {

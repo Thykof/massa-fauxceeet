@@ -1,6 +1,6 @@
-import { useAccountStore } from '../../store';
 import { Connected } from './Connected';
 import { Disconnected } from './Disconnected';
+import { useAccountStore } from '../../store';
 
 export function ChainStatus() {
   const { connectedAccount, currentProvider } = useAccountStore();

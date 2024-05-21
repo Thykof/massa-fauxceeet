@@ -1,5 +1,6 @@
 import { Client, ClientFactory } from '@massalabs/massa-web3';
 import { IAccount, IProvider } from '@massalabs/wallet-provider';
+
 import { SUPPORTED_MASSA_WALLETS } from '../const';
 
 async function handleBearbyAccountChange(

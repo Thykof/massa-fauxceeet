@@ -24,7 +24,9 @@
     "zustand": "^4.5.2"
   },
   "devDependencies": {
+    "@massalabs/eslint-config": "^0.0.11",
     "@massalabs/prettier-config-as": "^0.0.2",
+    "@tanstack/eslint-plugin-query": "^5.32.1",
     "@types/dot-object": "^2.1.6",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
@@ -33,6 +35,8 @@
     "@vitejs/plugin-react": "^4.2.1",
     "autoprefixer": "^10.4.19",
     "eslint": "^8.57.0",
+    "eslint-plugin-html": "^8.1.1",
+    "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
     "install": "^0.13.0",

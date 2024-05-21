@@ -1,4 +1,5 @@
 import dot from 'dot-object';
+
 import enUs from './en_US.json';
 import { INTL } from '../const';
 

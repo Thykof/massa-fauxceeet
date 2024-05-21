@@ -1,9 +1,9 @@
-import { useAccountStore } from '../store';
 import { ConnectedAccount } from './ConnectedAccount';
 import { MASBalance } from './MASBalance';
 import { WalletError } from './WalletError';
-import Intl from '../i18n/i18n';
 import { BEARBY_INSTALL } from '../const';
+import Intl from '../i18n/i18n';
+import { useAccountStore } from '../store';
 
 export default function BearbyWallet() {
   const { connectedAccount } = useAccountStore();

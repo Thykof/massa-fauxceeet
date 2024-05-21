@@ -1,12 +1,14 @@
 import { useEffect, useState } from 'react';
+
 import { fromMAS } from '@massalabs/massa-web3';
+import { formatAmount } from '@massalabs/react-ui-kit';
 import { IAccountBalanceResponse } from '@massalabs/wallet-provider';
+
+import { FetchingLine } from './FetchingComponent';
+import { massaToken } from '../const';
 import Intl from '../i18n/i18n';
 import { useAccountStore } from '../store';
-import { massaToken } from '../const';
 import { fetchMASBalance } from '../utils';
-import { formatAmount } from '@massalabs/react-ui-kit';
-import { FetchingLine } from './FetchingComponent';
 
 export function MASBalance() {
   const [balance, setBalance] = useState<IAccountBalanceResponse>();

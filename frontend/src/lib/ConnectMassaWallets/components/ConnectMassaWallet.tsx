@@ -1,17 +1,19 @@
 import { useEffect, useState } from 'react';
+
 import {
   MassaWallet as MassaWalletLogo,
   Tooltip,
 } from '@massalabs/react-ui-kit';
+
+import { BearbySvg } from './BearbySvg';
 import BearbyWallet from './BearbyWallet';
 import SelectMassaWallet from './SelectMassaWallet';
 import StationWallet from './StationWallet';
-import SwitchWalletButton from './SwitchWalletButton';
 import { ChainStatus } from './Status/ChainStatus';
-import { useAccountStore } from '../store';
-import Intl from '../i18n/i18n';
+import SwitchWalletButton from './SwitchWalletButton';
 import { SUPPORTED_MASSA_WALLETS } from '../const';
-import { BearbySvg } from './BearbySvg';
+import Intl from '../i18n/i18n';
+import { useAccountStore } from '../store';
 
 export const ConnectMassaWallet = () => {
   const { currentProvider, providers, setCurrentProvider, isFetching } =

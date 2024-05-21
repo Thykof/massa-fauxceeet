@@ -1,4 +1,5 @@
 import { Clipboard } from '@massalabs/react-ui-kit';
+
 import { useAccountStore } from '../store';
 import { maskAddress } from '../utils';
 

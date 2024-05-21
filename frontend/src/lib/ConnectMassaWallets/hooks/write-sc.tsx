@@ -1,4 +1,5 @@
 import { useState } from 'react';
+
 import {
   Client,
   EOperationStatus,
@@ -8,8 +9,8 @@ import {
 import { ToastContent, toast } from '@massalabs/react-ui-kit';
 
 import { OperationToast } from '../components/OperationToast';
-import { logSmartContractEvents } from '../utils';
 import Intl from '../i18n/i18n';
+import { logSmartContractEvents } from '../utils';
 
 interface ToasterMessage {
   pending: string;

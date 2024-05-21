@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
+
 import {
   isMassaStationAvailable,
   isMassaWalletEnabled,
 } from '@massalabs/wallet-provider';
+
 import { ConnectedAccount } from './ConnectedAccount';
 import { MASBalance } from './MASBalance';
 import { StationSelectAccount } from './StationSelectAccount';
@@ -12,8 +14,8 @@ import {
   MASSA_STATION_STORE,
   MASSA_WALLET_CREATE_ACCOUNT,
 } from '../const';
-import { useAccountStore } from '../store';
 import Intl from '../i18n/i18n';
+import { useAccountStore } from '../store';
 
 export default function StationWallet() {
   const { accounts } = useAccountStore();

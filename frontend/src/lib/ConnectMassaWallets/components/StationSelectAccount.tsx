@@ -1,5 +1,6 @@
 import { Dropdown } from '@massalabs/react-ui-kit';
 import { IAccount } from '@massalabs/wallet-provider';
+
 import { useAccountStore } from '../store';
 
 export function StationSelectAccount() {

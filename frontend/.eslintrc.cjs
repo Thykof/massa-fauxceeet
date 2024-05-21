@@ -4,36 +4,8 @@ module.exports = {
     'plugin:@tanstack/eslint-plugin-query/recommended',
     'plugin:react-hooks/recommended',
   ],
-  plugins: ['html', '@tanstack/query', 'import'],
+  plugins: ['html', '@tanstack/query'],
   rules: {
-    'import/order': [
-      'error',
-      {
-        groups: ['builtin', 'external', 'internal'],
-        pathGroups: [
-          {
-            pattern: 'react',
-            group: 'external',
-            position: 'before',
-          },
-        ],
-        pathGroupsExcludedImportTypes: ['react'],
-        'newlines-between': 'always',
-        alphabetize: {
-          order: 'asc',
-          caseInsensitive: true,
-        },
-      },
-    ],
+    'no-console': 'off',
   },
-  overrides: [
-    {
-      files: ['cypress/**/*'],
-      rules: {
-        '@typescript-eslint/no-explicit-any': 'off',
-        '@typescript-eslint/no-namespace': 'off',
-        '@typescript-eslint/ban-ts-comment': 'warn',
-      },
-    },
-  ],
 };
