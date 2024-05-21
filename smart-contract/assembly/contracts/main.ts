@@ -77,17 +77,15 @@ export function selfDestruct(_: StaticArray<u8>): void {
   _setBytecode(emptySc);
 
   // 2- delete everything in Storage
-  let keys = getKeys();
-  for (let i = 0; i < keys.length; i++) {
-    Storage.del(keys[i]);
-  }
+  resetStorage();
 
   // 3- transfer back coins if any
   let scBalance = balance();
   // Balance will most likely be > 0 as we deleted some keys from the Storage
   // but if there is nothing in the Storage, no need to call transferCoins
   if (scBalance > 0) {
-    transferCoins(new Address(bytesToString(ownerAddress([]))), scBalance);
+    // don't take from owner because we just reset the storage
+    transferCoins(Context.caller(), scBalance);
   }
 }
 
