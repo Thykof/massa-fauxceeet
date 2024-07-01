@@ -51,17 +51,29 @@ function App() {
         </div>
         <div>
           Github:{' '}
-          <a href="https://github.com/Thykof/massa-fauxceeet">
+          <a
+            className="underline"
+            href="https://github.com/Thykof/massa-fauxceeet"
+          >
             https://github.com/Thykof/massa-fauxceeet
           </a>
           <br />
           Join Dusa:{' '}
-          <a href="https://app.dusa.io/trade?ref=qmf57z">
+          <a className="underline" href="https://app.dusa.io/trade?ref=qmf57z">
             https://app.dusa.io/trade?ref=qmf57z
           </a>
           <br />
           Delegated stacking:{' '}
-          <a href="https://massa-blast.net">https://massa-blast.net</a>
+          <a className="underline" href="https://massa-blast.net">
+            https://massa-blast.net
+          </a>
+          <br />
+          Scan the Fauxceeet smart contract: go to{' '}
+          <a className="underline" href="https://massa-sc-scanner.netlify.app/">
+            massa-sc-scanner
+          </a>{' '}
+          and type{' '}
+          <pre>AS12UfF7hTKrkzUy9JmeVt92wWLny7i9qQrwenyASKu2GaEaHc97f</pre>
         </div>
       </div>
       <div className="theme-dark">
